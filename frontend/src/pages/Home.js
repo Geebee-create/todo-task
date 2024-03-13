@@ -12,7 +12,7 @@ const Home = () => {
         try {
             await deleteTodo(todoID);
             // Line below will filter out the deleted todo
-            setTodos(prevTodos => prevTodos.filter(todo => todo._id !== todoId));
+            setTodos(prevTodos => prevTodos.filter(todo => todo._id !== todoID));
         } catch (error) {
             console.error("Error deleting todo:", error);
         }
